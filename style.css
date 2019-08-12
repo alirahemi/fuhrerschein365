@@ -18,6 +18,10 @@
     padding: 10px;
     margin: 10px;
     }
+
+    .searchBTN{
+        padding: 8px 24px;
+    }
 }
 
 @media(max-width: 405px){
@@ -35,6 +39,8 @@
         display: none;
         
     }
+
+
 }
 
 
