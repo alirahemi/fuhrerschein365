@@ -39,8 +39,9 @@
         display: none;
         
     }
-
-
+    .searchBTN{
+        padding: 6px 18px;
+    }
 }
 
 
