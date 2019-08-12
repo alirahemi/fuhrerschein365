@@ -1,10 +1,10 @@
 .searchBox {
-    width: 600px;
+    width: 800px;
     height: 60px;
     border: none;
-    font-size: 40px;
-}
-
-h1{
-    opacity: 5;
+    font-size: 30px;
+    place-items: center;
+    cursor: text;
+    padding: 20px;
+    margin: 20pxö
 }
