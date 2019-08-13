@@ -1,3 +1,6 @@
+.titrValue {
+    font-size: 80px;
+}
 .searchBox {
     width: 600px;
     height: 60px;
@@ -8,10 +11,12 @@
     margin: 20px;
 }
 
+
+
 @media(max-width: 560px){
     .searchBox{
         width: 300px;
-    height: 21px;
+    height: 38px;
     border: none;
     font-size: 10px;
     
@@ -22,25 +27,44 @@
     .searchBTN{
         padding: 8px 24px;
     }
+
+    .titrValue {
+        font-size: 36px;
+    }
+
+    #de2fa{
+        /* display: none; */
+        
+        font-size: 18px;
+        margin: 0;
+    }
 }
 
 @media(max-width: 405px){
     .searchBox{
-        width: 200px;
-    height: 15px;
+    width: 200px;
+    height: 34px;
     border: none;
     font-size: 7px;
     
     padding: 10px;
-    margin: 10px;
+    margin: 0;
     }
 
     #de2fa{
-        display: none;
+        /* display: none; */
         
+        font-size: 13px;
+        margin: 0;
     }
     .searchBTN{
         padding: 6px 18px;
+    }
+
+    .titrValue{
+        padding: 0;
+        margin: 0;
+        font-size: 26px;
     }
 }
 
