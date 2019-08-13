@@ -54,18 +54,23 @@
     #de2fa{
         /* display: none; */
         
-        font-size: 11px;
+        font-size: 9px;
         margin: 0;
     }
     .searchBTN{
         padding: 6px 18px;
+        font-size: 36px;
     }
 
     .titrValue{
+        /* display: inline-block; */
+        margin-top: 40px;
+        margin-bottom: 0;
         padding: 0;
-        margin: 0;
-        font-size: 22px;
+        font-size: 18px;
     }
+
+    
 }
 
 
