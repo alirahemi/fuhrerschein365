@@ -45,7 +45,7 @@
     width: 200px;
     height: 34px;
     border: none;
-    font-size: 7px;
+    font-size: 12px;
     
     padding: 10px;
     margin: 0;
@@ -54,7 +54,7 @@
     #de2fa{
         /* display: none; */
         
-        font-size: 13px;
+        font-size: 11px;
         margin: 0;
     }
     .searchBTN{
@@ -64,7 +64,7 @@
     .titrValue{
         padding: 0;
         margin: 0;
-        font-size: 26px;
+        font-size: 22px;
     }
 }
 
