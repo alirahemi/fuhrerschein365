@@ -2,15 +2,24 @@
     font-size: 80px;
 }
 .searchBox {
-    width: 600px;
+    border:1px solid #e8e8e8;
+    background-color: #f5f5f5;
+    border-radius:  .25rem;
     height: 60px;
+    width: 500px;
     border: none;
-    font-size: 30px;
-    
+    font-size: 25px;
     padding: 20px;
     margin: 20px;
 }
 
+.sendMessageBTN{
+    background-color: rgb(255, 51, 102) !important;
+}
+
+.subscribeBTN{
+    background-color: rgb(255, 51, 102) !important;
+}
 
 
 @media(max-width: 560px){
