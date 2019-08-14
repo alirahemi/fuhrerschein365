@@ -1,86 +1,108 @@
+@font-face {
+    font-family: 'Samim';
+    src: url('/font/eot/IRANSansWeb.eot'); /* IE9 Compat Modes */
+    src: url('/font/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('/font/woff2/Samim.woff2') format('woff2'), /* Super Modern Browsers */
+           url('/font/woff/Samim.woff') format('woff'), /* Pretty Modern Browsers */
+           url('/font/ttf/Samim.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+
 .titrValue {
-    font-size: 80px;
+  font-size: 70px;
+  margin-top: -80px;
+}
+
+h2{
+    font-family:'Samim',  sans-serif; 
+    
 }
 .searchBox {
-    border:1px solid #e8e8e8;
-    background-color: #f5f5f5;
-    border-radius:  .25rem;
-    height: 60px;
-    width: 500px;
-    border: none;
-    font-size: 25px;
-    padding: 20px;
-    margin: 20px;
+  border: 1px solid #e8e8e8;
+  background-color: #f5f5f5;
+  border-radius: 0.25rem;
+  height: 60px;
+  width: 650px;
+  border: none;
+  font-size: 25px;
+  padding: 20px;
+  margin: 20px;
+  font-family:'Samim',  sans-serif; 
 }
 
-.sendMessageBTN{
-    background-color: rgb(255, 51, 102) !important;
+.sendMessageBTN {
+  background-color: rgb(255, 51, 102) !important;
 }
 
-.subscribeBTN{
-    background-color: rgb(255, 51, 102) !important;
+.subscribeBTN {
+  background-color: rgb(255, 51, 102) !important;
+}
+
+.rtlContent {
+    direction: rtl;
+    text-align: right;
+    font-family:'Samim',  sans-serif; 
+}
+
+.footerLink:hover{
+    color: rgb(255, 43, 96) !important;
 }
 
 
-@media(max-width: 560px){
-    .searchBox{
-        width: 300px;
+@media (max-width: 560px) {
+  .searchBox {
+    width: 300px;
     height: 38px;
     border: none;
     font-size: 10px;
-    
     padding: 10px;
     margin: 10px;
-    }
+  }
 
-    .searchBTN{
-        padding: 8px 24px;
-    }
+  .searchBTN {
+    padding: 8px 24px;
+  }
 
-    .titrValue {
-        font-size: 36px;
-    }
+  .titrValue {
+    font-size: 36px;
+  }
 
-    #de2fa{
-        /* display: none; */
-        
-        font-size: 18px;
-        margin: 0;
-    }
+  #de2fa {
+    /* display: none; */
+
+    font-size: 18px;
+    margin: 0;
+  }
 }
 
-@media(max-width: 405px){
-    .searchBox{
+@media (max-width: 405px) {
+  .searchBox {
     width: 200px;
     height: 34px;
     border: none;
     font-size: 12px;
-    
+
     padding: 10px;
     margin: 0;
-    }
+  }
 
-    #de2fa{
-        /* display: none; */
-        
-        font-size: 10px;
-        margin: 0;
-    }
-    .searchBTN{
-        padding: 6px 18px;
-        font-size: 36px;
-    }
+  #de2fa {
+    /* display: none; */
 
-    .titrValue{
-        /* display:inline-block; */
-        margin-top: 40px;
-        margin-bottom: 0;
-        padding: 0;
-        font-size: 20px;
-    }
+    font-size: 10px;
+    margin: 0;
+  }
+  .searchBTN {
+    padding: 6px 18px;
+    font-size: 36px;
+  }
 
-    
+  .titrValue {
+    /* display:inline-block; */
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 20px;
+  }
 }
-
-
-
