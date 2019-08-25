@@ -1,0 +1,31 @@
+{
+  "name": "fuhrerschein365",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js",
+    "start": "nodemon app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alirahemi/fuhrerschein365.git"
+  },
+  "author": "Ali Rahemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alirahemi/fuhrerschein365/issues"
+  },
+  "homepage": "https://github.com/alirahemi/fuhrerschein365#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1",
+    "sequelize": "^5.16.0"
+  }
+}
