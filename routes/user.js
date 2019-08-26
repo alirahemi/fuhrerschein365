@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.get("/", userController.getIndex);
 
+router.get("/dbFetchAll", userController.getDB);
 
 
 module.exports = router;

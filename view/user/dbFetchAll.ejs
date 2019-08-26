@@ -1,0 +1,25 @@
+<%- include('../includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <% if (prods.length > 0) { %>
+            <div style="margin-top: 100px">
+                <% for (let prod of prods) { %>
+                    <table style="margin-top: 10px">
+                        <hr>
+                        <tr>
+                            <td><%= prod.id %> - </td>
+                            <td><%= prod.pos %></td>
+                            <td style="font-weight: bold"><%= prod.deword %></td>
+                            <td><%= prod.faword %></td>
+                            <td><%= prod.imgsrc %></td>
+                        </tr>
+                    </table>
+                 <% }%>
+            </div>
+        <% }%>
+    </main>
+    
+<%- include('../includes/end.ejs') %>
