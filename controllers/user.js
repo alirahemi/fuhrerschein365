@@ -4,16 +4,14 @@ const Database = require("../models/db");
 // console.log(adminData.products.length);
 
 exports.getIndex = (req, res, next) => {
-    Database.fetchAll()
-    .then(([rows, fieldData]) => {
+    
         res.render("user/index", {
-            prods: rows,
             pageTitle: 'صفحه اصلی گواهینامه',
             path: '/'
         });
-    })
-    .catch(err => console.log(err));
+   
 };
+
 
 exports.getDB = (req, res, next) => {
     Database.fetchAll()
@@ -25,6 +23,19 @@ exports.getDB = (req, res, next) => {
         });
     })
     .catch(err => console.log(err));
+};
+
+exports.postSearchResult = (req, res, next) => {
+    Database.fetchAll()
+    .then(([rows, fieldData]) => {
+        res.render("user/searchResult", {
+            prods: rows,
+            pageTitle: 'نتیجه جستجو',
+            path: '/user/searchResult'
+        });
+    })
+    .catch(err => console.log(err));    
+ 
 };
 
 // exports.getIndex = (req, res, next) => {

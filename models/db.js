@@ -16,4 +16,8 @@ module.exports = class Database {
     static fetchAll() {
        return db.execute('SELECT * FROM words');
     }
+
+    static find(word) {
+        return db.execute('SELECT * FROM words WHEN words.deword = ?', [word] ); 
+    }
 };

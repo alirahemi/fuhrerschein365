@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const db = require('./util/database')
 const bodyParser = require('body-parser');
-// const adminRoutes = require('./routes/admin');
+const adminRoutes = require('./routes/admin');
 const userRoutes = require('./routes/user');
 const path = require('path');
 const errorController = require('./controllers/error')
@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// app.use(adminRoutes.routes);
+app.use(adminRoutes.routes);
 app.use(userRoutes);
 
 app.use(errorController.get404Page);

@@ -6,5 +6,9 @@ router.get("/", userController.getIndex);
 
 router.get("/dbFetchAll", userController.getDB);
 
+router.post("/searchResult", userController.postSearchResult);
+
+
 
 module.exports = router;
+ 
