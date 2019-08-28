@@ -8,4 +8,6 @@ router.get("/adminPanel", adminController.getAdminPanel);
 
 // router.post("/add-product", adminController.postADDProduct);
 
+router.post("/adminPanel", adminController.postAddRecord)
+
 exports.routes = router;

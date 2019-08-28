@@ -46,6 +46,11 @@ h2{
     font-family:'Samim',  sans-serif; 
 }
 
+.textLeftContent {
+    direction: left;
+    text-align: center;
+    font-family:'Samim',  sans-serif; 
+}
 .centerContent {
     direction: rtl;
     text-align: center;

@@ -10,7 +10,8 @@ module.exports = class Database {
     }
 
     save() {
-
+        return db.execute('INSERT INTO words (pos, deWord, faWord, imgsrc) VALUE (?, ?, ?, ?)', 
+        [this.pos, this.deword, this.faword, this.imgsrc]);
     }
 
     static fetchAll() {
