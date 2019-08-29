@@ -6,10 +6,19 @@
     <%- include('../includes/navigation.ejs') %>
     <main>
         <div class="mainAdminPanel" style="margin-top: 120px">
-                <h3 class="centerContent" style="margin-bottom: 20px"><%= message %></h3>
-                <form action="/adminPanel" method="POST">
+                <h3 class="centerContent" style="margin-bottom: 20px"><span style="color: rgb(255, 51, 102)"><%= records.length %></span> <%= message %></h3>
+                <form id="addForm" action="/adminPanel" method="POST">
                     <div class="internPanel textLeftContent" >
-                        <P>Position</P><input style="margin-bottom: 20px" type="text" name="pos" required> <br>
+                            <P>Position</P>
+                            <select name="pos" form="addForm" style="margin-bottom: 20px" autofocus>
+                                    <option value="der">Der</option>
+                                    <option value="die">Die</option>
+                                    <option value="das">Das</option>
+                                    <option value="v">Verb</option>
+                                    <option value="adv">Adverb</option>
+                                    <option value="adj">Adjectiv</option>
+                                    <option value="ad">Adverb&Adjectiv</option>
+                            </select> <br>
 
                         <P>German Word</P><input id="deword" style="margin-bottom: 20px" type="text" name="deword" required><br>
                       
