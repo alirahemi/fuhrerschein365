@@ -6,7 +6,8 @@ const Database = require("../models/db");
 exports.getAdminPanel = (req, res, next) => {
   res.render("admin/adminPanel", {
     // prods: rows,
-    pageTitle: "پنل مدیریت"
+    pageTitle: "پنل مدیریت",
+    message:""
     // path: '/admin/adminPanel'
   });
 };
@@ -21,8 +22,8 @@ exports.postAddRecord = (req, res, next) => {
     .then(([result]) => {
       if (result[0]) {
         res.render("admin/adminPanel", {
-          result: "واژه از قبل ذخیره شده است",
-          pageTitle: "ذخیره سازی ناموفق"
+          message: "واژه از قبل ذخیره شده است",
+          pageTitle: "پنل مدیریت"
         });
       } else {
         const database = new Database(null, pos, deword, faword, imgsrc);
@@ -30,8 +31,8 @@ exports.postAddRecord = (req, res, next) => {
           .save()
           .then(() => {
             res.render("admin/adminPanel", {
-              result: "رکورد با موفقیت ثبت شد",
-              pageTitle: "ذخیره سازی موفق"
+              message: "رکورد با موفقیت ثبت شد",
+              pageTitle: "پنل مدیریت"
             });
           })
           .catch(err => {
