@@ -18,7 +18,7 @@ module.exports = class Database {
        return db.execute('SELECT * FROM words');
     }
 
-    static find(word) {
-        return db.execute('SELECT * FROM words WHEN words.deword = ?', [word] ); 
+    static findByWord(deword) {
+        return db.execute('SELECT * FROM words WHERE words.deword = ?', [deword] ); 
     }
 };

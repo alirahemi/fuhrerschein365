@@ -1,24 +1,33 @@
 <%- include('../includes/head.ejs') %>
-
+<!-- <script src="assets/myScript.js"></script> -->
 </head>
 
 <body>
     <%- include('../includes/navigation.ejs') %>
     <main>
         <div class="mainAdminPanel" style="margin-top: 120px">
-            <form action="/adminPanel" method="POST">
-                <div class="internPanel textLeftContent" >
-                    <!-- <P>ID</P><input style="margin-bottom: 20px" type="number" name="id" autofocus> <br> -->
-                    <P>Position</P><input style="margin-bottom: 20px" type="text" name="pos"> <br>
-                    <P>German Word</P><input style="margin-bottom: 20px" type="text" name="deword"> <br>
-                    <P>Farsi Word</P><input style="margin-bottom: 20px" type="text" name="faword"> <br>
-                    <P>Image Source</P><textarea  name="imgsrc"></textarea> <br>
-                    <div class="mbr-section-btn align-center py-2">
-                        <button class="btn btn-md btn-secondary display-4 searchBTN" type="submit">Save</button>
+                <form action="/adminPanel" method="POST">
+                    <div class="internPanel textLeftContent" >
+                        <P>Position</P><input style="margin-bottom: 20px" type="text" name="pos" required> <br>
+
+                        <P>German Word</P><input id="deword" style="margin-bottom: 20px" type="text" name="deword" required><br>
+                      
+
+                        <P>Farsi Word</P><input style="margin-bottom: 20px" type="text" name="faword" required> <br>
+
+                        <P>Image Source</P><textarea  name="imgsrc"></textarea> <br>
+
+                        <div class="mbr-section-btn align-center py-2">
+                            <button class="btn btn-md btn-secondary display-4 searchBTN" type="submit">Save</button>
+                            <button class="btn btn-md btn-secondary display-4 searchBTN" type="reset">Reset</button>
+                        </div>
                     </div>
-                </div>    
-            </form>
-        </div>
-    </main>
-    
-<%- include('../includes/end.ejs') %>
+                   
+                </form>
+            </div>
+        </main>
+        
+        
+        
+
+        <%- include('../includes/end.ejs') %>
