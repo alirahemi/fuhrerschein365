@@ -6,6 +6,7 @@ const Database = require("../models/db");
 exports.getAdminPanel = (req, res, next) => {
   res.render("admin/adminPanel", {
     records: "",
+    lastWord: "",
     pageTitle: "پنل مدیریت",
     message: ""
     // path: '/admin/adminPanel'
@@ -23,6 +24,7 @@ exports.postAddRecord = (req, res, next) => {
       if (result[0]) {
         res.render("admin/adminPanel", {
           records: "",
+          lastWord: "",
           message: "واژه از قبل ذخیره شده است",
           pageTitle: "پنل مدیریت"
         });
@@ -35,6 +37,7 @@ exports.postAddRecord = (req, res, next) => {
               .then(([rows]) => {
                 res.render("admin/adminPanel", {
                   records: rows,
+                  lastWord: rows[rows.length-1].deword,
                   message: "رکورد با موفقیت ثبت شد",
                   pageTitle: "پنل مدیریت"
                 });
@@ -42,6 +45,7 @@ exports.postAddRecord = (req, res, next) => {
               .catch(err => {
                 res.render("admin/adminPanel", {
                   records: "",
+                  lastWord: "",
                   pageTitle: "خطا در ثبت اطلاعات"
                 });
                 console.log(err);
